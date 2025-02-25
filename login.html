@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Pro - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Inventory Pro</h1>
+            <p>Manage your inventory with ease</p>
+            <p>Track stock levels, manage orders, and generate reports all in one place.</p>
+        </div>
+        <div class="right-section">
+            <div class="tab">
+                <button id="loginTab" class="active" onclick="showLogin()">Login</button>
+                <button id="registerTab" onclick="showRegister()">Register</button>
+            </div>
+            <div id="loginForm" class="form-container">
+                <h2>Login</h2>
+                <p>Enter your credentials to access your account</p>
+                <input type="text" placeholder="Username" id="loginUsername">
+                <input type="password" placeholder="Password" id="loginPassword">
+                <button>Login</button>
+            </div>
+            <div id="registerForm" class="form-container">
+                <h2>Register</h2>
+                <p>Create a new account to get started</p>
+                <input type="text" placeholder="Username" id="registerUsername">
+                <input type="password" placeholder="Password" id="registerPassword">
+                <input type="password" placeholder="Confirm Password" id="confirmPassword">
+                <button id="submit" type="submit">Register</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
